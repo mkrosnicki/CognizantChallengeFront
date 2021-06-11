@@ -13,7 +13,7 @@ export class ScoresPageComponent implements OnInit {
   constructor(private userHttpService: UserHttpService) { }
 
   ngOnInit(): void {
-    this.userHttpService.fetchUsers(3).subscribe((value: User[]) => this.users = value);
+    this.userHttpService.fetchUsers(0, 3).subscribe((value: User[]) => this.users = value);
   }
 
 }
