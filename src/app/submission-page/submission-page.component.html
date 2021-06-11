@@ -23,11 +23,11 @@
   <div class="form-group row">
     <label for="colFormLabel" class="col-sm-2 col-form-label">Solution code*</label>
     <div class="col-sm-10">
-      <textarea class="form-control" id="colFormLabel" rows="8" formControlName="solution"></textarea>
+      <textarea class="form-control" id="colFormLabel" rows="12" formControlName="solution"></textarea>
     </div>
   </div>
   <div class="form-group row pt-2">
-    <button class="btn btn-primary w-100" type="submit">
+    <button class="btn btn-primary w-100" type="submit" [disabled]="taskSubmissionForm.invalid">
       Submit solution
     </button>
   </div>
