@@ -1,0 +1,19 @@
+<table class="table">
+  <thead class="scores-header">
+  <tr>
+    <th scope="col">#</th>
+    <th scope="col">Name</th>
+    <th scope="col">Successes</th>
+    <th scope="col">Tasks</th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr *ngFor="let user of users; let i = index">
+    <th scope="row">{{i}}</th>
+    <td>{{ user.name }}</td>
+    <td>{{ user.tasks.length }}</td>
+    <td>{{ user.tasks.join(", ") }}</td>
+  </tr>
+  </tbody>
+</table>
+

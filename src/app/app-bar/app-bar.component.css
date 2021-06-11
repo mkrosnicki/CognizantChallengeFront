@@ -1,0 +1,21 @@
+.app-bar {
+  background-color: #1976d2;
+}
+
+.app-bar .btn-outline-primary {
+  color: #fff!important;
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.app-bar .btn-outline-primary:hover {
+  color: #fff!important;
+  background-color: #1976d2;
+  border-color: #1976d2;
+}
+
+.app-bar .btn-outline-primary:not(:disabled):not(.disabled).active, .btn-outline-primary:not(:disabled):not(.disabled):active, .show>.btn-outline-primary.dropdown-toggle {
+  color: #fff!important;
+  background-color: #1976d2;
+  border-color: #fff;
+}
